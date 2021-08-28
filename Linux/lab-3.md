@@ -84,10 +84,12 @@ bash: cd: myteam/: Permission denied
 sudo chmod o=rw g=rx o=x oldpasswd
 sudo chmod 651
 ```
+
 - 666 for files and 777 for directories 
 ```bash
 sudo chmod -rwx oldpasswd
 ```
+
 17. What are the minimum permission needed for:
 	Copy a directory (permission for source directory and permissions for target parent directory)
 	Copy a file (permission for source file and and permission for target parent directory)
@@ -96,9 +98,8 @@ sudo chmod -rwx oldpasswd
 	List a directory content (ls command)
 	View a file content (more/cat command)
 	Modify a file content
-```bash
 
-```
+
 18. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.
 ```bash
 mkdir dir 
@@ -117,20 +118,23 @@ rm: remove write-protected directory 'dir/'? y
 ```bash
 sleep 100
 ```
+
 21. Kill the sleep command.
 ```bash
 killall -9 sleep
 ```
+
 22. Display your processes only
 ```bash
 ps
 ```
+
 23. Display all processes except yours
 ```bash
 ps u -U $USERNAME -N
 ```
-24. Use the pgrep command to list your processes only
 
+24. Use the pgrep command to list your processes only
 ```bash
 pgrep -u $USERNAME
 ```
