@@ -79,7 +79,7 @@ bash: cd: myteam/: Permission denied
 	Change your default permissions to be as above.
 	What is the maximum permission a file can have, by default when it is just created? And what is that for directory.
 	Change your default permissions to be no permission to everyone then create a directory and a file to verify.
-
+	
 ```bash
 sudo chmod o=rw g=rx o=x oldpasswd
 sudo chmod 651
@@ -99,6 +99,12 @@ sudo chmod -rwx oldpasswd
 	View a file content (more/cat command)
 	Modify a file content
 
+	1. src = xr, target = xw
+	2. src = r,  target = xw
+	3. src = w
+	4. target = x
+	5. src = r
+	6. src = w
 
 18. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.
 ```bash
